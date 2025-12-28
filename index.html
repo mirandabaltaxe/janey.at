@@ -3,12 +3,27 @@
 
 <head>
   <title>Janey</title>
-  <link rel="icon" href="janey1.png" type="image/png" />
+  <link rel="icon" href="photos/janey1.png" type="image/png" />
 
 </head>
 
 <body bgcolor="white" text="black">
-  <img src="janey1.png" alt="Janey" width="200" />
+  <img id="dog" alt="Janey" width="200" />
+  <script>
+    // List of images in the photos folder
+    const images = [
+      "photos/janey1.png",
+      "photos/janey2.jpg",
+      "photos/janey3.jpg",
+      "photos/janey4.png"
+    ];
+
+    // Pick a random one
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+
+    // Set it
+    document.getElementById("dog").src = randomImage;
+  </script>
 </body>
 
 </html>
